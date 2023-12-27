@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkerFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFurniture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAddFurniture"/>
+
+    <Button
+        android:layout_marginStart="8dp"
+        android:id="@+id/btnAddFurniture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Добавить мебель"/>
+
+    <Button
+        android:layout_marginStart="10dp"
+        android:id="@+id/btnAddFurnitureType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btnAddFurniture"
+        android:layout_alignParentBottom="true"
+        android:text="Добавить тип мебели"/>
+
+</RelativeLayout>

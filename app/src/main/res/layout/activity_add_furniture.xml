@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddFurnitureActivity">
+
+    <!-- EditText для имени -->
+    <EditText
+        android:id="@+id/etFurnitureName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название"/>
+
+    <!-- EditText для описания -->
+    <EditText
+        android:id="@+id/etFurnitureDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание"/>
+
+    <!-- EditText для цены -->
+    <EditText
+        android:id="@+id/etFurnitureCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Цена"/>
+
+
+    <!-- EditText для фото (или Button для выбора фото) -->
+    <EditText
+        android:id="@+id/etFurniturePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Фото"/>
+
+    <!-- Spinner для типов мебели -->
+    <Spinner
+        android:id="@+id/spinnerFurnitureType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Button для сохранения -->
+    <Button
+        android:id="@+id/btnSaveFurniture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"/>
+
+</LinearLayout>

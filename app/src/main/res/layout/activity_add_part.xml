@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerPartType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etPartName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название"/>
+
+    <EditText
+        android:id="@+id/etPartWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Вес"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etPartMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Материал"/>
+
+    <EditText
+        android:id="@+id/etPartDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Диаметр"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etPartPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Фото (URL)"/>
+
+    <Button
+        android:id="@+id/btnSavePart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить деталь"/>
+
+</LinearLayout>

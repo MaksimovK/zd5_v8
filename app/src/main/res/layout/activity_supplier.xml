@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupplierActivity">
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvParts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/categorySpinner"
+        android:layout_above="@id/btnAddParts"/>
+
+    <Button
+        android:layout_marginStart="8dp"
+        android:id="@+id/btnAddParts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Добавить материал"/>
+
+    <Button
+        android:layout_marginStart="10dp"
+        android:id="@+id/btnAddPartsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btnAddParts"
+        android:layout_alignParentBottom="true"
+        android:text="Добавить тип материала"/>
+
+</RelativeLayout>

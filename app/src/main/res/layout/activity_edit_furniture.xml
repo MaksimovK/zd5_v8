@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etFurnitureName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название мебели"/>
+
+    <EditText
+        android:id="@+id/etFurnitureDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание"/>
+
+    <EditText
+        android:id="@+id/etFurnitureCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цена"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Изображение"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btnSaveFurniture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"/>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/workerFragment">
+
+    <!-- Worker Fragment -->
+    <fragment
+        android:id="@+id/workerFragment"
+        android:name="com.example.zd5_v8.WorkerFragment"
+        android:label="Мебель" >
+        <!-- Action to navigate from Worker to Manage Suppliers -->
+        <action
+            android:id="@+id/action_workerFragment_to_manageSuppliersFragment"
+            app:destination="@id/manageSuppliersFragment" />
+        <!-- Action to navigate from Worker to Manage Clients -->
+        <action
+            android:id="@+id/action_workerFragment_to_manageClientsFragment"
+            app:destination="@id/manageClientsFragment" />
+    </fragment>
+
+    <!-- Manage Suppliers Fragment -->
+    <fragment
+        android:id="@+id/manageSuppliersFragment"
+        android:name="com.example.zd5_v8.ManageSuppliersFragment"
+        android:label="Поставщики" >
+        <!-- Action to navigate back to Worker Fragment -->
+        <action
+            android:id="@+id/action_manageSuppliersFragment_to_workerFragment"
+            app:destination="@id/workerFragment" />
+        <!-- Action to navigate from Suppliers to Manage Clients -->
+        <action
+            android:id="@+id/action_manageSuppliersFragment_to_manageClientsFragment"
+            app:destination="@id/manageClientsFragment" />
+    </fragment>
+
+    <!-- Manage Clients Fragment -->
+    <fragment
+        android:id="@+id/manageClientsFragment"
+        android:name="com.example.zd5_v8.ManageClientsFragment"
+        android:label="Клиенты" >
+        <!-- Action to navigate back to Worker Fragment -->
+        <action
+            android:id="@+id/action_manageClientsFragment_to_workerFragment"
+            app:destination="@id/workerFragment" />
+        <!-- Action to navigate from Clients to Manage Suppliers -->
+        <action
+            android:id="@+id/action_manageClientsFragment_to_manageSuppliersFragment"
+            app:destination="@id/manageSuppliersFragment" />
+    </fragment>
+</navigation>

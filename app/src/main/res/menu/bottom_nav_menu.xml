@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/workerFragment"
+        android:title="Мебель" />
+    <item
+        android:id="@+id/manageSuppliersFragment"
+        android:title="Поставщики" />
+    <item
+        android:id="@+id/manageClientsFragment"
+        android:title="Клиенты" />
+</menu>
